@@ -96,8 +96,8 @@ router.delete("/:id",async(req,res)=>{
             return res.status(404).json({error: "Person not found"});
         }
 
-        console.log("person deleted successfully");
-        res.status(200).json(response);
+        console.log("data deleted");
+        res.status(200).json({message:"person deleted successfully"});
     }
 catch(err){
             console.log(err);
